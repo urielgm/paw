@@ -1,4 +1,5 @@
 var http = require ('http');
+var fs = require('fs');
 //var color = require ('colors');
 //Estableciendo tema de colores 
 /*colors.setTheme({
@@ -7,14 +8,25 @@ var http = require ('http');
     'error' : 'red'
 });
 */
-
 var server = http.createServer(function(req, res){
-    res.writeHead(200,{
-        'Content-Type':'text/html'
+    fs.readFile('./static/index.html','utf8',function(err, content){
+        if(err){
+            //Hubo error
+            res.writeHead(500,{
+                'Content-Type' : 'text/html'
+            });
+            console.log('Error en la lectura de'. error+'un archivo: ln20 server.js'.error);
+            res.end('<H1>Error interno</H1>');
+        }else{
+            //No hubo error 
+            res.writeHead(200,{
+                'Content-Type' : 'text/html'
+            });
+            console.log('Sirviendo html');
+            res.end(content);
+
+        }
     });
-    res.write('<h1> Server funcionando... </h1>');
-    res.write('<p>MI sitio asombroso</p>');
-    res.end();
 });
 
 server.listen(3000,'127.0.0.1',function(){
