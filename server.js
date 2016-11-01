@@ -1,13 +1,13 @@
 var http = require ('http');
 var fs = require('fs');
-//var color = require ('colors');
+var colors = require ('colors');
 //Estableciendo tema de colores 
-/*colors.setTheme({
+colors.setTheme({
     'data' : 'cyan',
     'info' : 'rainbow',
     'error' : 'red'
 });
-*/
+
 var server = http.createServer(function(req, res){
     fs.readFile('./static/index.html','utf8',function(err, content){
         if(err){
@@ -22,7 +22,7 @@ var server = http.createServer(function(req, res){
             res.writeHead(200,{
                 'Content-Type' : 'text/html'
             });
-            console.log('Sirviendo html');
+            console.log('Sirviendo html'.data);
             res.end(content);
 
         }
