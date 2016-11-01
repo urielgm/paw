@@ -18,5 +18,8 @@
     "js"
   ],
   "author": "@eddocampo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
 }
