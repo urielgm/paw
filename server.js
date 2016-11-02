@@ -9,6 +9,7 @@ colors.setTheme({
 });
 
 var server = http.createServer(function(req, res){
+    //console.log(`> Recurso solicitado> ${req.url}`);
     fs.readFile('./static/index.html','utf8',function(err, content){
         if(err){
             //Hubo error
