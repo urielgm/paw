@@ -20,7 +20,8 @@
   "author": "@eddocampo",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "mime": "^1.3.4"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
