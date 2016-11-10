@@ -1,2 +1,8 @@
 #Ignorando modulos de  NodeJs
 node_modules 
+
+#Ignorando el log de errores 
+npm-debug.log
+
+#Ignorando los paquetes para el frontend 
+.static/vendor
