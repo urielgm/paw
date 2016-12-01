@@ -7,20 +7,59 @@
     <link type="image/png" rel="shortcut icon" href="./favicon.png">
     <!-- Cargando de estilo de sweetalert -->
     <link rel="stylesheet" href="./vendor/sweetalert/dist/sweetalert.css">
+    <!--Inportando libreria Jquery-->
+    <script src="./vendor/jquery/dist/jquery.min.js"></script>
+    <!--Cargando estilos de materialize-->
+    <link rel="stylesheet" href="./vendor/materialize/dist/css/materialize.min.css">
+    <!--Cargandoi fuentes-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Cargando materialize.js-->
+    <script src="./vendor/materialize/dist/js/materialize.min.js"></script>
 </head>
 <body>
-    <h1>Página asombrosa</h1>
-    <p>
-        Esta es la página mas asombrosa que hayas visto en tu <strong>chaka</strong> vida :P
-    </p>
-    <p>
-        <button onClick="saludar()">
-            Push me, yeah!!
+    <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+    </script>
+    <!--Empieza Parallax-->
+<div class="parallax-container">
+    <div class="section white">
+    <div class="row container">
+      <h1 class="header">Fortune cookie</h1>
+    </div>
+  </div>
+    <div class="parallax"><img src="./img/jap1.jpg"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <div class="col s6 offset-s3 center-align">
+          <h2 class="grey-text text-darken-3 lighten-3">Prueba tu suerte</h2>
+      <h3>Oprime el botón</h3>
+      <div class="offset-s3">
+            <p>
+        <button class="waves-effect waves-light btn grey darken-4 z-depth-3" onClick="getFortuneFromServer()">
+            Open cookie 
         </button>
-    </p>
-    <p>
-        <img src="./img/riv.jpg" alt="Bowie" width="800px" height="600px">
-    </p>
+            </p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="./img/jap2.jpg"></div>
+  </div>
+  <!--termina parallax-->
+  <footer class="page-footer grey">
+    <div class="container">
+      PAW
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      ©‎ 2016 Eddocampo
+      </div>
+    </div>
+  </footer>
     <script src="./js/site.js">
     </script>
     <!-- Cargando script de sweetalert -->
