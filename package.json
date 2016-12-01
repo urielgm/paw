@@ -17,11 +17,12 @@
     "web",
     "js"
   ],
-  "author": "@eddocampo",
+  "author": "@uriel",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
-    "mime": "^1.3.4"
+    "mime": "^1.3.4",
+    "mongodb":"^2.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

@@ -19,7 +19,7 @@ var _crackTheCookie = function(req, res){
 
 var _getAuthor = function(req, res){
     console.log("> Se solicito: Author..".info);
-    res.end("Author: Eddocampo");
+    res.end("Author: uriel");
 };
 
 
